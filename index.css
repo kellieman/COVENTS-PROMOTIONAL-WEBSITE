@@ -26,6 +26,15 @@ a {
     transition: color 0.3s ease;
 }
 
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ===== NAVBAR ===== */
 .horizontal-nav {
     position: sticky;
@@ -843,6 +852,62 @@ main {
 
     .feature-copy p {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px 16px;
+        border-radius: 14px;
+    }
+
+    .home-nav {
+        padding-top: 30px;
+    }
+
+    .image-box {
+        min-height: auto;
+        padding: 18px;
+    }
+
+    .about-intro,
+    .benefits-section,
+    .contact-card,
+    .carousel-slide {
+        padding: 18px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .feature-media {
+        min-height: auto;
+    }
+
+    .feature-media img {
+        height: auto;
+    }
+
+    .hero-subtitle,
+    .section-subtext,
+    .feature-copy p,
+    .contact-card p,
+    .about-intro p {
+        font-size: 0.95rem;
     }
 }
 
