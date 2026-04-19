@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVENTS - College Event Registration System</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="horizontal-nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo-text">
+                    <h2 class="logo-title">COVENTS</h2>
+                    <p class="logo-subtitle">Event Registration System</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About System</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>                
+                <li class="dropdown">
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="#contact">Contact Us</a>
+                        <a href="developers.html" target="_blank">Developer Team</a>
+                    </div>
+                </li>                
+                <li><a href="https://github.com/kellieman/COVENTS-APP/releases/download/v1/COVENTS-1.0.0.exe" class="nav-link">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="home-nav">
+            <div class="home-copy">
+                <h1 class="hero-title">COVENTS</h1>
+                <p class="hero-subtitle">
+                    Making College Event Registration Effortless & Organized
+                </p>
+                <div class="home-actions">
+                    <a href="https://github.com/kellieman/COVENTS-APP/releases/download/v1/COVENTS-1.0.0.exe" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+            </div>
+            <div class="image-box">
+                <div class="hero-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SYSTEM SECTION -->
+        <section id="about" class="content-section about-section">
+            <div class="section-heading">
+                <span class="section-tag">About System</span>
+                <h2>What is COVENTS?</h2>
+            </div>
+
+            <div class="about-intro">
+                <p>
+                    The Covents System aims to have a better and more efficient registration for students who want to participate in school events. 
+                    This system helps to organize event information efficiently and prevents problems such as over participants by setting a maximum number of participants for each event.
+                </p>
+            </div>
+
+            <!-- KEY FEATURES CARDS -->
+            <div class="features-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Secure Login</h3>
+                    <p>Student accounts with secure authentication to protect user data</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Event Registration</h3>
+                    <p>Browse and register for events that interest you with just a few clicks</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Capacity Control</h3>
+                    <p>Allows admin to set a maximum number to prevent over participants.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Search Bar</h3>
+                    <p>A quick and easy search feature to find events by name.</p>
+                </div>
+            </div>
+
+            <!-- BENEFITS SECTION -->
+            <div class="benefits-section">
+                <div class="benefits-content">
+                    <h3>Why Choose COVENTS?</h3>
+                    <ul class="benefits-list">
+                        <li><span class="check-icon"><i class="fas fa-check-circle"></i></span> Organized and efficient event management for the entire college community</li>
+                        <li><span class="check-icon"><i class="fas fa-check-circle"></i></span> Eliminates confusion with centralized event information</li>
+                        <li><span class="check-icon"><i class="fas fa-check-circle"></i></span> Prevents overcrowding by controlling event capacity</li>
+                        <li><span class="check-icon"><i class="fas fa-check-circle"></i></span> Save time with quick registration and event search</li>
+                        <li><span class="check-icon"><i class="fas fa-check-circle"></i></span> Can view your registered events directly in your mailbox</li>
+                        <li><span class="check-icon"><i class="fas fa-check-circle"></i></span> Admin dashboard to monitor and manage all events</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="content-section features-section">
+            <div class="section-heading">
+                <span class="section-tag">Features</span>
+                <h2>How It Works?</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn-prev" onclick="prevFeature()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        <div class="feature-step carousel-slide">
+                            <div class="feature-media">
+                                <img src="userlogin.png" alt="User login feature preview" class="feature-img" onclick="openImageModal(this)">
+                            </div>
+                            <div class="feature-copy">
+                                <h3>User Login</h3>
+                                <p>It allows students to create accounts and log in.</p>
+                            </div>
+                        </div>
+                        <div class="feature-step carousel-slide">
+                            <div class="feature-media">
+                                <img src="eventm.png" alt="Event management feature preview" class="feature-img" onclick="openImageModal(this)">
+                            </div>
+                            <div class="feature-copy">
+                                <h3>Event Management</h3>
+                                <p>The administrator can manage events.</p>
+                            </div>
+                        </div>
+                        <div class="feature-step carousel-slide">
+                            <div class="feature-media">
+                                <img src="reg.png" alt="Student registration feature preview" class="feature-img" onclick="openImageModal(this)">
+                            </div>
+                            <div class="feature-copy">
+                                <h3>Student Registration for Events</h3>
+                                <p>Students can view available events and register for their interested events.</p>
+                            </div>
+                        </div>
+                        <div class="feature-step carousel-slide">
+                            <div class="feature-media">
+                                <img src="participant.png" alt="Participant control feature preview" class="feature-img" onclick="openImageModal(this)">
+                            </div>
+                            <div class="feature-copy">
+                                <h3>Participant Control</h3>
+                                <p>Limiting the participants who can register for the event.</p>
+                            </div>
+                        </div>
+                        <div class="feature-step carousel-slide">
+                            <div class="feature-media">
+                                <img src="search.png" alt="Search bar feature preview" class="feature-img" onclick="openImageModal(this)">
+                            </div>
+                            <div class="feature-copy">
+                                <h3>Search Bar</h3>
+                                <p>The students can search the event to quickly find specific events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-next" onclick="nextFeature()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+            <div class="section-heading">
+                <span class="section-tag">Contact Us</span>
+                <h2>Get In Touch With Us</h2>
+                <p class="section-subtext">Need help or want to learn more? Reach out and we'll guide you through the COVENTS experience.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Address</h3>
+                    <p>San Gonzalo, Labrador, Pangasinan</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>09056562789</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Covents@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- IMAGE MODAL -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal(event)">
+        <span class="modal-close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-image" id="modalImage" src="" alt="Preview">
+    </div>
+
+    <footer>© 2026 Covents. All rights reserved.</footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            const track = document.querySelector('.carousel-track');
+            const slideWidth = 100;
+            track.style.transform = `translateX(-${index * slideWidth}%)`;
+        }
+
+        function nextFeature() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevFeature() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+
+        function openImageModal(img) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = img.src;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImageModal(event) {
+            const modal = document.getElementById('imageModal');
+            if (event && event.target !== modal && event.target.id !== 'modalImage') {
+                return;
+            }
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
